@@ -62,10 +62,10 @@ A verbatim string or `null`. Example: `"The use of the Coptic articles, both def
 A BCP-47 tag or `null`. Example: `"en"`, `"grc"`, `"la"`.
 
 ### `cited_in`
-A Citation (one level only) or `null`. Example: the WOL article that quotes the book:
+A Citation (one level only) or `null`. Example: the WOL article that quotes the book. WOL describes the article itself (`kind: "article"`, the article title); the publication is identified by `ids.wol.symbol` and `docId`:
 ```json
 { "schema": "research-citation/1.0.0",
-  "source": { "kind": "periodical", "title": "The Watchtower", "year": 2008 },
+  "source": { "kind": "article", "title": "Was the Word “God” or “a god”?", "year": 2008 },
   "locator": { "kind": "paragraph", "value": "p5" },
   "ids": { "wol": { "docId": "2008812", "par": "p5", "symbol": "w08" } } }
 ```
