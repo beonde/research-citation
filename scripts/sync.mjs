@@ -23,6 +23,9 @@ const files = {
 for (const f of readdirSync(join(root, "fixtures")).filter((f) => f.endsWith(".json"))) {
     files[`fixtures/${f}`] = readFileSync(join(root, "fixtures", f));
 }
+for (const f of readdirSync(join(root, "mappings")).filter((f) => f.endsWith(".json"))) {
+    files[`mappings/${f}`] = readFileSync(join(root, "mappings", f));
+}
 const sha = (b) => createHash("sha256").update(b).digest("hex");
 const manifest = {
     version,

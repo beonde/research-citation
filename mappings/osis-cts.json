@@ -1,0 +1,594 @@
+{
+  "description": "OSIS book ↔ CTS work for the Greek NT (tlg0031, Westcott–Hort perseus-grc2) and the Septuagint (tlg0527, First1KGreek, Rahlfs-based) as served by scaife.perseus.org. Built from the Scaife catalogue on 2026-11-15. versification: 'same' = chapter.verse carry over unchanged; 'differs' = numbers or order can differ, convert with care and say so; 'lxx-psalms' = Hebrew/English psalm numbers must be converted to LXX numbering. A server maps only when the entry says it is safe, and otherwise reports the caveat.",
+  "version": "1.0.0",
+  "books": [
+    {
+      "osis": "Matt",
+      "work": "urn:cts:greekLit:tlg0031.tlg001",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Mark",
+      "work": "urn:cts:greekLit:tlg0031.tlg002",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Luke",
+      "work": "urn:cts:greekLit:tlg0031.tlg003",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "John",
+      "work": "urn:cts:greekLit:tlg0031.tlg004",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Acts",
+      "work": "urn:cts:greekLit:tlg0031.tlg005",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Rom",
+      "work": "urn:cts:greekLit:tlg0031.tlg006",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "1Cor",
+      "work": "urn:cts:greekLit:tlg0031.tlg007",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "2Cor",
+      "work": "urn:cts:greekLit:tlg0031.tlg008",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Gal",
+      "work": "urn:cts:greekLit:tlg0031.tlg009",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Eph",
+      "work": "urn:cts:greekLit:tlg0031.tlg010",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Phil",
+      "work": "urn:cts:greekLit:tlg0031.tlg011",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Col",
+      "work": "urn:cts:greekLit:tlg0031.tlg012",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "1Thess",
+      "work": "urn:cts:greekLit:tlg0031.tlg013",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "2Thess",
+      "work": "urn:cts:greekLit:tlg0031.tlg014",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "1Tim",
+      "work": "urn:cts:greekLit:tlg0031.tlg015",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "2Tim",
+      "work": "urn:cts:greekLit:tlg0031.tlg016",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Titus",
+      "work": "urn:cts:greekLit:tlg0031.tlg017",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Phlm",
+      "work": "urn:cts:greekLit:tlg0031.tlg018",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Heb",
+      "work": "urn:cts:greekLit:tlg0031.tlg019",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Jas",
+      "work": "urn:cts:greekLit:tlg0031.tlg020",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "1Pet",
+      "work": "urn:cts:greekLit:tlg0031.tlg021",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "2Pet",
+      "work": "urn:cts:greekLit:tlg0031.tlg022",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "1John",
+      "work": "urn:cts:greekLit:tlg0031.tlg023",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "2John",
+      "work": "urn:cts:greekLit:tlg0031.tlg024",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "3John",
+      "work": "urn:cts:greekLit:tlg0031.tlg025",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Jude",
+      "work": "urn:cts:greekLit:tlg0031.tlg026",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Rev",
+      "work": "urn:cts:greekLit:tlg0031.tlg027",
+      "edition": "perseus-grc2",
+      "corpus": "nt",
+      "versification": "same"
+    },
+    {
+      "osis": "Gen",
+      "work": "urn:cts:greekLit:tlg0527.tlg001",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Exod",
+      "work": "urn:cts:greekLit:tlg0527.tlg002",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Lev",
+      "work": "urn:cts:greekLit:tlg0527.tlg003",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Num",
+      "work": "urn:cts:greekLit:tlg0527.tlg004",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Deut",
+      "work": "urn:cts:greekLit:tlg0527.tlg005",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Josh",
+      "work": "urn:cts:greekLit:tlg0527.tlg006",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Judg",
+      "work": "urn:cts:greekLit:tlg0527.tlg008",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "Codex Alexandrinus text."
+    },
+    {
+      "osis": "Ruth",
+      "work": "urn:cts:greekLit:tlg0527.tlg010",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "1Sam",
+      "work": "urn:cts:greekLit:tlg0527.tlg011",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "LXX 1 Kingdoms (Βασιλειῶν Αʹ)."
+    },
+    {
+      "osis": "2Sam",
+      "work": "urn:cts:greekLit:tlg0527.tlg012",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "LXX 2 Kingdoms."
+    },
+    {
+      "osis": "1Kgs",
+      "work": "urn:cts:greekLit:tlg0527.tlg013",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "differs",
+      "note": "LXX 3 Kingdoms: order and verse numbers differ in places."
+    },
+    {
+      "osis": "2Kgs",
+      "work": "urn:cts:greekLit:tlg0527.tlg014",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "LXX 4 Kingdoms."
+    },
+    {
+      "osis": "1Chr",
+      "work": "urn:cts:greekLit:tlg0527.tlg015",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "2Chr",
+      "work": "urn:cts:greekLit:tlg0527.tlg016",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "1Esd",
+      "work": "urn:cts:greekLit:tlg0527.tlg017",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "LXX Esdras A; no Hebrew counterpart."
+    },
+    {
+      "osis": "Ezra",
+      "work": "urn:cts:greekLit:tlg0527.tlg018",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "chapters": [
+        1,
+        10
+      ],
+      "note": "LXX Esdras B chapters 1–10."
+    },
+    {
+      "osis": "Neh",
+      "work": "urn:cts:greekLit:tlg0527.tlg018",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "chapter_offset": 10,
+      "note": "LXX Esdras B chapters 11–23: add 10 to the chapter."
+    },
+    {
+      "osis": "Esth",
+      "work": "urn:cts:greekLit:tlg0527.tlg019",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "differs",
+      "note": "Greek Esther with additions; additions are numbered separately."
+    },
+    {
+      "osis": "Jdt",
+      "work": "urn:cts:greekLit:tlg0527.tlg020",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Tob",
+      "work": "urn:cts:greekLit:tlg0527.tlg021",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "1Macc",
+      "work": "urn:cts:greekLit:tlg0527.tlg023",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "2Macc",
+      "work": "urn:cts:greekLit:tlg0527.tlg024",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "3Macc",
+      "work": "urn:cts:greekLit:tlg0527.tlg025",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "4Macc",
+      "work": "urn:cts:greekLit:tlg0527.tlg026",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Ps",
+      "work": "urn:cts:greekLit:tlg0527.tlg027",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "lxx-psalms",
+      "note": "LXX numbering: Ps 10–147 (Hebrew/English) are one lower; 9+10 and 114+115 are joined, 116 and 147 are split. Titles may shift verse numbers."
+    },
+    {
+      "osis": "Odes",
+      "work": "urn:cts:greekLit:tlg0527.tlg028",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Prov",
+      "work": "urn:cts:greekLit:tlg0527.tlg029",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "differs",
+      "note": "Chapters 24–31 are in a different order in the LXX."
+    },
+    {
+      "osis": "Eccl",
+      "work": "urn:cts:greekLit:tlg0527.tlg030",
+      "edition": null,
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "No Greek text on Scaife (English translation only)."
+    },
+    {
+      "osis": "Song",
+      "work": "urn:cts:greekLit:tlg0527.tlg031",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Job",
+      "work": "urn:cts:greekLit:tlg0527.tlg032",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Wis",
+      "work": "urn:cts:greekLit:tlg0527.tlg033",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Sir",
+      "work": "urn:cts:greekLit:tlg0527.tlg034",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "PssSol",
+      "work": "urn:cts:greekLit:tlg0527.tlg035",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Hos",
+      "work": "urn:cts:greekLit:tlg0527.tlg036",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Amos",
+      "work": "urn:cts:greekLit:tlg0527.tlg037",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Mic",
+      "work": "urn:cts:greekLit:tlg0527.tlg038",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Joel",
+      "work": "urn:cts:greekLit:tlg0527.tlg039",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Obad",
+      "work": "urn:cts:greekLit:tlg0527.tlg040",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Jonah",
+      "work": "urn:cts:greekLit:tlg0527.tlg041",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Nah",
+      "work": "urn:cts:greekLit:tlg0527.tlg042",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Hab",
+      "work": "urn:cts:greekLit:tlg0527.tlg043",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Zeph",
+      "work": "urn:cts:greekLit:tlg0527.tlg044",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Hag",
+      "work": "urn:cts:greekLit:tlg0527.tlg045",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Zech",
+      "work": "urn:cts:greekLit:tlg0527.tlg046",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Mal",
+      "work": "urn:cts:greekLit:tlg0527.tlg047",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Isa",
+      "work": "urn:cts:greekLit:tlg0527.tlg048",
+      "edition": "1st1K-grc2",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Jer",
+      "work": "urn:cts:greekLit:tlg0527.tlg049",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "differs",
+      "note": "LXX order differs from chapter 25 on (oracles against the nations moved)."
+    },
+    {
+      "osis": "Bar",
+      "work": "urn:cts:greekLit:tlg0527.tlg050",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Lam",
+      "work": "urn:cts:greekLit:tlg0527.tlg051",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "EpJer",
+      "work": "urn:cts:greekLit:tlg0527.tlg052",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Ezek",
+      "work": "urn:cts:greekLit:tlg0527.tlg053",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same"
+    },
+    {
+      "osis": "Sus",
+      "work": "urn:cts:greekLit:tlg0527.tlg055",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "Theodotion; the Old Greek is tlg0527.tlg054."
+    },
+    {
+      "osis": "Dan",
+      "work": "urn:cts:greekLit:tlg0527.tlg057",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "Theodotion; the Old Greek is tlg0527.tlg056."
+    },
+    {
+      "osis": "Bel",
+      "work": "urn:cts:greekLit:tlg0527.tlg059",
+      "edition": "1st1K-grc1",
+      "corpus": "lxx",
+      "versification": "same",
+      "note": "Theodotion; the Old Greek is tlg0527.tlg058."
+    }
+  ]
+}

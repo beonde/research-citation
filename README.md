@@ -7,6 +7,7 @@ There's no runtime code here. Each server vendors a copy into its `contract/` di
 - [`citation.schema.json`](citation.schema.json): the schema.
 - [`CITATION_CONTRACT.md`](CITATION_CONTRACT.md): every field, with one example each; the rules; how citations travel in tool output.
 - [`fixtures/`](fixtures): cross-server fixtures.
+- [`mappings/osis-cts.json`](mappings/osis-cts.json): OSIS book ↔ CTS work for the Greek NT and the Septuagint on Scaife, with versification caveats. Perseus/Scaife and STEPBible use it to accept each other's references.
 
 ```sh
 npm ci
