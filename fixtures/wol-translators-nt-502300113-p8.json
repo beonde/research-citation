@@ -1,0 +1,39 @@
+{
+  "description": "WOL → archive. Bible Verses Explained, John 1:1 (ijwbv article 12, docId 502300113) ¶8 quotes The Translator’s New Testament; footnote b gives page 451. Emitted by WOL get_document.",
+  "emitted_by": "wol",
+  "citations": [
+    {
+      "schema": "research-citation/1.0.0",
+      "source": {
+        "kind": "book",
+        "title": "The Translator’s New Testament",
+        "author": null,
+        "editor": null,
+        "year": null,
+        "edition": null,
+        "publisher": null,
+        "volume": null
+      },
+      "locator": { "kind": "page", "value": "451", "end": null },
+      "quote": "In effect it gives an adjectival quality to the second use of Theos (God) so that the phrase means ‘The Word was divine.’",
+      "quote_language": "en",
+      "cited_in": {
+        "schema": "research-citation/1.0.0",
+        "source": {
+          "kind": "article",
+          "title": "John 1:1—“In the Beginning Was the Word”",
+          "author": null,
+          "editor": null,
+          "year": null,
+          "edition": null,
+          "publisher": null,
+          "volume": null
+        },
+        "locator": { "kind": "paragraph", "value": "8", "end": null },
+        "ids": { "wol": { "docId": "502300113", "par": "8", "symbol": "ijwbv" } }
+      },
+      "ids": {},
+      "verification": { "status": "unchecked", "method": "none", "checked_by": "wol", "note": null }
+    }
+  ]
+}

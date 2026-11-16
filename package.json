@@ -1,0 +1,16 @@
+{
+  "name": "research-citation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared citation contract (JSON Schema + fixtures) for the WOL, archiveorg, Perseus/Scaife and STEPBible MCP servers. Data format only; no runtime code.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "sync": "node scripts/sync.mjs",
+    "check": "node scripts/validate.mjs && node scripts/sync.mjs --check"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0"
+  }
+}

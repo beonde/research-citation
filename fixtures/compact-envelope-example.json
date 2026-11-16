@@ -1,0 +1,14 @@
+{
+  "description": "Example body of a ```json citations block in compact mode (two STEPBible θεός hits in John 1:1). Validated against $defs/CompactEnvelope.",
+  "emitted_by": "stepbible",
+  "envelope": {
+    "schema": "research-citation/1.0.0",
+    "sources": {
+      "s1": { "kind": "bible", "title": "Translators Amalgamated Greek NT (TAGNT)", "edition": "NA27/28 + variants" }
+    },
+    "hits": [
+      { "src": "s1", "loc": { "kind": "verse", "value": "John.1.1" }, "osis": "John.1.1", "strongs": ["G2316"] },
+      { "src": "s1", "loc": { "kind": "verse", "value": "John.1.2" }, "osis": "John.1.2", "strongs": ["G2316"] }
+    ]
+  }
+}

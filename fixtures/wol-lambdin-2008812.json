@@ -1,0 +1,39 @@
+{
+  "description": "WOL → archive. The Watchtower 2008 11/1 pp. 24-25 (docId 2008812) quotes Lambdin, Introduction to Sahidic Coptic. The article gives no page, so the locator is 'none'. Emitted by WOL get_document.",
+  "emitted_by": "wol",
+  "citations": [
+    {
+      "schema": "research-citation/1.0.0",
+      "source": {
+        "kind": "book",
+        "title": "Introduction to Sahidic Coptic",
+        "author": "Thomas O. Lambdin",
+        "editor": null,
+        "year": null,
+        "edition": null,
+        "publisher": null,
+        "volume": null
+      },
+      "locator": { "kind": "none", "value": "", "end": null },
+      "quote": "The use of the Coptic articles, both definite and indefinite, corresponds closely to the use of the articles in English.",
+      "quote_language": "en",
+      "cited_in": {
+        "schema": "research-citation/1.0.0",
+        "source": {
+          "kind": "periodical",
+          "title": "The Watchtower",
+          "author": null,
+          "editor": null,
+          "year": 2008,
+          "edition": null,
+          "publisher": null,
+          "volume": null
+        },
+        "locator": { "kind": "paragraph", "value": "p5", "end": null },
+        "ids": { "wol": { "docId": "2008812", "par": "p5", "symbol": "w08" } }
+      },
+      "ids": {},
+      "verification": { "status": "unchecked", "method": "none", "checked_by": "wol", "note": null }
+    }
+  ]
+}

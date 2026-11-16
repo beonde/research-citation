@@ -1,0 +1,32 @@
+{
+  "description": "archive → (none). Studies in the Scriptures, Series V (1899), printed page 70 = leaf 74 of studiesinscriptu0000unse_t3s7. Verified by archiveorg verify_quote against the Archive's OCR.",
+  "emitted_by": "archiveorg",
+  "citations": [
+    {
+      "schema": "research-citation/1.0.0",
+      "source": {
+        "kind": "book",
+        "title": "Studies in the Scriptures, Series V: The At-one-ment Between God and Man",
+        "author": null,
+        "editor": null,
+        "year": 1899,
+        "edition": null,
+        "publisher": "Watch Tower Bible & Tract Society",
+        "volume": "V"
+      },
+      "locator": { "kind": "page", "value": "70", "end": null },
+      "quote": "The Word was with the God [ho theos] and the Word was a God [theos]",
+      "quote_language": "en",
+      "cited_in": null,
+      "ids": {
+        "archive": { "identifier": "studiesinscriptu0000unse_t3s7", "leaf": 74, "page": "70" }
+      },
+      "verification": {
+        "status": "verbatim",
+        "method": "ocr",
+        "checked_by": "archiveorg",
+        "note": "Matched in the Archive's OCR text of leaf 74 (printed page 70); page image not read."
+      }
+    }
+  ]
+}

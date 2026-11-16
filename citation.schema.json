@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/beonde/research-citation/schema/1.0.0/citation.schema.json",
+  "title": "research-citation/1.0.0",
+  "description": "One citation exchanged between independent research MCP servers (WOL, archiveorg, Perseus/Scaife, STEPBible). Data format only: no server calls another. See CITATION_CONTRACT.md.",
+  "$ref": "#/$defs/Citation",
+  "$defs": {
+    "SchemaTag": {
+      "const": "research-citation/1.0.0"
+    },
+    "Source": {
+      "type": "object",
+      "description": "The work being cited.",
+      "required": ["kind", "title"],
+      "properties": {
+        "kind": {
+          "enum": ["book", "article", "periodical", "bible", "ancient_text", "lexicon", "web"]
+        },
+        "title": { "type": "string", "minLength": 1 },
+        "author": { "type": ["string", "null"] },
+        "editor": { "type": ["string", "null"] },
+        "year": { "type": ["integer", "null"] },
+        "edition": { "type": ["string", "null"] },
+        "publisher": { "type": ["string", "null"] },
+        "volume": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "Locator": {
+      "type": "object",
+      "description": "Where inside the source. value is a string so that printed pages like 'xiv' and references like '1.1' fit.",
+      "required": ["kind", "value"],
+      "properties": {
+        "kind": { "enum": ["page", "leaf", "paragraph", "section", "verse", "column", "none"] },
+        "value": { "type": "string" },
+        "end": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "Ids": {
+      "type": "object",
+      "description": "Canonical IDs. Every field is optional; a server fills in only the IDs it owns.",
+      "properties": {
+        "wol": {
+          "type": "object",
+          "required": ["docId"],
+          "properties": {
+            "docId": { "type": "string", "pattern": "^[0-9]+$" },
+            "par": { "type": ["string", "null"] },
+            "symbol": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "archive": {
+          "type": "object",
+          "required": ["identifier"],
+          "properties": {
+            "identifier": { "type": "string", "minLength": 1 },
+            "leaf": { "type": ["integer", "null"], "minimum": 0 },
+            "page": { "type": ["string", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "cts_urn": { "type": "string", "pattern": "^urn:cts:[A-Za-z]+:[A-Za-z0-9]+(\\.[A-Za-z0-9_-]+){0,2}(:[^\\s]+)?$" },
+        "osis": {
+          "type": "string",
+          "pattern": "^[1-4]?[A-Z][A-Za-z]+(\\.[0-9]+){1,2}(-[1-4]?[A-Z][A-Za-z]+(\\.[0-9]+){1,2})?$"
+        },
+        "strongs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[HG][0-9]{1,5}[A-Za-z]?$" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Verification": {
+      "type": "object",
+      "description": "Written only by a server that actually checked something.",
+      "required": ["status", "method", "checked_by"],
+      "properties": {
+        "status": {
+          "enum": ["unchecked", "verbatim", "close", "differs", "not_found", "no_scan"],
+          "default": "unchecked"
+        },
+        "method": { "enum": ["page_image", "ocr", "primary_text", "none"] },
+        "checked_by": { "type": "string", "minLength": 1 },
+        "note": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "CitationBase": {
+      "type": "object",
+      "required": ["schema", "source", "locator"],
+      "properties": {
+        "schema": { "$ref": "#/$defs/SchemaTag" },
+        "source": { "$ref": "#/$defs/Source" },
+        "locator": { "$ref": "#/$defs/Locator" },
+        "quote": { "type": ["string", "null"] },
+        "quote_language": {
+          "type": ["string", "null"],
+          "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"
+        },
+        "ids": { "$ref": "#/$defs/Ids" },
+        "verification": { "$ref": "#/$defs/Verification" }
+      }
+    },
+    "CitedIn": {
+      "description": "Where a citation was found. Same shape as Citation but cannot nest further.",
+      "type": "object",
+      "$ref": "#/$defs/CitationBase",
+      "properties": {
+        "schema": true, "source": true, "locator": true, "quote": true,
+        "quote_language": true, "ids": true, "verification": true
+      },
+      "unevaluatedProperties": false
+    },
+    "Citation": {
+      "type": "object",
+      "$ref": "#/$defs/CitationBase",
+      "properties": {
+        "schema": true, "source": true, "locator": true, "quote": true,
+        "quote_language": true, "ids": true, "verification": true,
+        "cited_in": {
+          "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/CitedIn" }]
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "CompactHit": {
+      "type": "object",
+      "description": "One hit in the compact text block: a source key, the locator and the IDs only.",
+      "required": ["src"],
+      "properties": {
+        "src": { "type": "string", "minLength": 1 },
+        "loc": { "$ref": "#/$defs/Locator" },
+        "quote": { "type": ["string", "null"] },
+        "wol": { "$ref": "#/$defs/Ids/properties/wol" },
+        "archive": { "$ref": "#/$defs/Ids/properties/archive" },
+        "cts_urn": { "$ref": "#/$defs/Ids/properties/cts_urn" },
+        "osis": { "$ref": "#/$defs/Ids/properties/osis" },
+        "strongs": { "$ref": "#/$defs/Ids/properties/strongs" },
+        "status": { "$ref": "#/$defs/Verification/properties/status" },
+        "cited_in": {
+          "type": "object",
+          "required": ["src"],
+          "properties": {
+            "src": { "type": "string", "minLength": 1 },
+            "loc": { "$ref": "#/$defs/Locator" },
+            "wol": { "$ref": "#/$defs/Ids/properties/wol" },
+            "archive": { "$ref": "#/$defs/Ids/properties/archive" },
+            "cts_urn": { "$ref": "#/$defs/Ids/properties/cts_urn" },
+            "osis": { "$ref": "#/$defs/Ids/properties/osis" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "CompactEnvelope": {
+      "type": "object",
+      "description": "Body of the ```json citations block in compact mode. Sources are listed once and referenced by key.",
+      "required": ["schema", "sources", "hits"],
+      "properties": {
+        "schema": { "$ref": "#/$defs/SchemaTag" },
+        "sources": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/$defs/Source" }
+        },
+        "hits": { "type": "array", "items": { "$ref": "#/$defs/CompactHit" } }
+      },
+      "additionalProperties": false
+    },
+    "FullEnvelope": {
+      "type": "object",
+      "description": "Body of the ```json citations block in full mode.",
+      "required": ["schema", "citations"],
+      "properties": {
+        "schema": { "$ref": "#/$defs/SchemaTag" },
+        "citations": { "type": "array", "items": { "$ref": "#/$defs/Citation" } }
+      },
+      "additionalProperties": false
+    }
+  }
+}

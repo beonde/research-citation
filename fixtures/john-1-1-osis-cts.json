@@ -1,0 +1,42 @@
+{
+  "description": "STEPBible ↔ Perseus. John 1:1 as emitted by each server. STEPBible owns osis + strongs; Perseus/Scaife owns the CTS URN and maps its own NT URNs to OSIS. Each server must accept the other's citation as input.",
+  "emitted_by": "stepbible, scaife",
+  "citations": [
+    {
+      "schema": "research-citation/1.0.0",
+      "source": {
+        "kind": "bible",
+        "title": "Translators Amalgamated Greek NT (TAGNT)",
+        "author": null,
+        "editor": null,
+        "year": null,
+        "edition": "NA27/28 + variants",
+        "publisher": "STEPBible.org",
+        "volume": null
+      },
+      "locator": { "kind": "verse", "value": "John.1.1", "end": null },
+      "quote": null,
+      "quote_language": null,
+      "cited_in": null,
+      "ids": { "osis": "John.1.1", "strongs": ["G1722", "G0746", "G1510", "G3588", "G3056", "G2532", "G4314", "G2316"] }
+    },
+    {
+      "schema": "research-citation/1.0.0",
+      "source": {
+        "kind": "bible",
+        "title": "The New Testament in the original Greek (Westcott and Hort)",
+        "author": null,
+        "editor": "Brooke Foss Westcott; Fenton John Anthony Hort",
+        "year": null,
+        "edition": "perseus-grc2",
+        "publisher": "Harper and Brothers",
+        "volume": null
+      },
+      "locator": { "kind": "section", "value": "1.1", "end": null },
+      "quote": null,
+      "quote_language": null,
+      "cited_in": null,
+      "ids": { "cts_urn": "urn:cts:greekLit:tlg0031.tlg004.perseus-grc2:1.1", "osis": "John.1.1" }
+    }
+  ]
+}
